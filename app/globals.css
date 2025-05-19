@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 5%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 5%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 5%;
+  --primary: 188 95% 40%; /* Cyan/Teal Medical Blue */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 182 67% 48%; /* Light Aqua */
+  --secondary-foreground: 0 0% 5%;
+  --muted: 180 20% 95%;
+  --muted-foreground: 180 10% 40%;
+  --accent: 185 80% 45%; /* Vibrant Cyan */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 180 10% 85%;
+  --input: 180 10% 85%;
+  --ring: 188 95% 40%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 210 20% 10%;
+  --foreground: 180 10% 90%;
+  --card: 210 20% 12%;
+  --card-foreground: 180 10% 90%;
+  --popover: 210 20% 12%;
+  --popover-foreground: 180 10% 90%;
+  --primary: 188 95% 55%; /* Brighter for dark mode */
+  --primary-foreground: 210 20% 10%;
+  --secondary: 182 67% 55%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 180 10% 20%;
+  --muted-foreground: 180 10% 60%;
+  --accent: 185 85% 55%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 180 10% 30%;
+  --input: 180 10% 30%;
+  --ring: 188 95% 55%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
