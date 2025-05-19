@@ -71,6 +71,10 @@
     "typescript": "5.2.2",
     "uuid": "^11.1.0",
     "vaul": "^0.9.9",
+    "wavesurfer.js": "^6.6.4",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/wavesurfer.js": "^6.0.12"
   }
 }
